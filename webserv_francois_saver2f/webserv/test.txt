@@ -1,0 +1,102 @@
+EPOLL_FD: 3
+FD_LISTEN: 4
+EVENT_SERVER: 4
+OKAY0
+READY: 1
+events[i].data.fd: 4
+OKAY1
+OKAY2
+OKAY22
+OKAY0
+READY: 1
+events[i].data.fd: 5
+ON EST LA
+BUFFER2: 
+test: 1
+OKAY4
+OKAY0
+READY: 1
+events[i].data.fd: 5
+OKAY1
+OKAY3
+BUFFER: GET / HTTP/1.1
+Host: 127.0.0.1:13667
+Use
+OKAY0
+READY: 1
+events[i].data.fd: 5
+OKAY1
+OKAY3
+BUFFER: r-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x
+OKAY0
+READY: 1
+events[i].data.fd: 5
+OKAY1
+OKAY3
+BUFFER: 86_64; rv:107.0) Gecko/20100101 Firefox/10
+OKAY0
+READY: 1
+events[i].data.fd: 5
+OKAY1
+OKAY3
+BUFFER: 7.0
+Accept: text/html,application/xhtml+x
+OKAY0
+READY: 1
+events[i].data.fd: 5
+OKAY1
+OKAY3
+BUFFER: ml,application/xml;q=0.9,image/avif,image/
+OKAY0
+READY: 1
+events[i].data.fd: 5
+OKAY1
+OKAY3
+BUFFER: webp,*/*;q=0.8
+Accept-Language: fr,fr-FR;
+OKAY0
+READY: 1
+events[i].data.fd: 5
+OKAY1
+OKAY3
+BUFFER: q=0.8,en-US;q=0.5,en;q=0.3
+Accept-Encodin
+OKAY0
+READY: 1
+events[i].data.fd: 5
+OKAY1
+OKAY3
+BUFFER: g: gzip, deflate, br
+Connection: keep-ali
+OKAY0
+READY: 1
+events[i].data.fd: 5
+OKAY1
+OKAY3
+BUFFER: ve
+Upgrade-Insecure-Requests: 1
+Sec-Fetc
+OKAY0
+READY: 1
+events[i].data.fd: 5
+OKAY1
+OKAY3
+BUFFER: h-Dest: document
+Sec-Fetch-Mode: navigate
+OKAY0
+READY: 1
+events[i].data.fd: 5
+OKAY1
+OKAY3
+BUFFER: 
+Sec-Fetch-Site: none
+Sec-Fetch-User: ?1
+OKAY0
+READY: 1
+events[i].data.fd: 5
+OKAY1
+OKAY3
+BUFFER: 
+
+
+OKAY0
