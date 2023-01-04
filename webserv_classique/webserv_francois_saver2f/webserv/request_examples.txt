@@ -1,0 +1,235 @@
+GET /test.php HTTP/1.1
+Host: webserv.tech
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:106.0) Gecko/20100101 Firefox/106.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8
+Accept-Language: fr,fr-FR;q=0.8,en-US;q=0.5,en;q=0.3
+Accept-Encoding: gzip, deflate
+Connection: close
+Upgrade-Insecure-Requests: 1
+
+
+"GET    /index.html    HTTP/1.1\r\n"
+"Host: www.ens-lyon.fr\r\n"
+"User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:106.0) Gecko/20100101 Firefox/106.0\r\n"
+"Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8\r\n"
+"Accept-Language: fr,fr-FR;q=0.8,en-US;q=0.5,en;q=0.3\r\n"
+"Accept-Encoding: gzip, deflate\r\n"
+"Referer: https://www.google.com/\r\n"
+"Connection: close\r\n"
+"Upgrade-Insecure-Requests: 1\r\n"
+"\r\n";
+//"un petit test";
+
+    const char    *buffer = "GET /cgi_scripts/bonjour.phps/test2.php/et/un/pathinfo?laonvatester/query_string/mtn HTTP/1.1\r\n"
+        "Host: webserv.tech\r\n"
+        "User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:106.0) Gecko/20100101 Firefox/106.0\r\n"
+        "Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8\r\n"
+        "Accept-Language: fr,fr-FR;q=0.8,en-US;q=0.5,en;q=0.3\r\n"
+        "Accept-Encoding: gzip, deflate\r\n"
+        "Connection: close\r\n"
+        "Upgrade-Insecure-Requests: 1\r\n"
+        "\r\n";
+
+
+GET /cgi_scripts/bonjour.phps/test.phar?laonvatester/query_string/mtn HTTP/1.1
+Host: webserv.tech
+SCRIPT_NAME:/cgi_scripts/bonjour.phps/bonjour.phar
+SCRIPT_FILENAME:/var/www/webserv.tech/cgi_scripts/bonjour.phps/bonjour.phar
+Connection: close
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:106.0) Gecko/20100101 Firefox/106.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8
+Accept-Language: fr,fr-FR;q=0.8,en-US;q=0.5,en;q=0.3
+Accept-Encoding: gzip, deflate
+Upgrade-Insecure-Requests: 1
+
+"GET /bonjour.phps/test.php/et/un/pathinfo?laonvatester/query_string/mtn HTTP/1.1\r\n"
+        "Host: webserv.tech\r\n"
+        "User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:106.0) Gecko/20100101 Firefox/106.0\r\n"
+        "Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8\r\n"
+        "Accept-Language: fr,fr-FR;q=0.8,en-US;q=0.5,en;q=0.3\r\n"
+        "Accept-Encoding: gzip, deflate\r\n"
+        "Connection: close\r\n"
+        "Upgrade-Insecure-Requests: 1\r\n"
+        "SCRIPT_NAME:/test"
+        "SCRIPT_FILENAME:/var/www/webserv.tech/test"
+        "\r\n";
+
+
+    const char    *buffer = "GET /bonjour.phps/get.php?fname=John&lname=Wick HTTP/1.1\r\n"
+        "Host: webserv.tech\r\n"
+        "User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:106.0) Gecko/20100101 Firefox/106.0\r\n"
+        "Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8\r\n"
+        "Accept-Language: fr,fr-FR;q=0.8,en-US;q=0.5,en;q=0.3\r\n"
+        "Accept-Encoding: gzip, deflate\r\n"
+        "Connection: close\r\n"
+        "Upgrade-Insecure-Requests: 1\r\n"
+        //"Script_Name:Test667\r\n"
+        "\r\n";
+
+    const char    *buffer = "GET /bonjour.phps/get.php?Prenom=Neo HTTP/1.1\r\n"
+        "Host: webserv.tech\r\n"
+        "User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:106.0) Gecko/20100101 Firefox/106.0\r\n"
+        "Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8\r\n"
+        "Accept-Language: fr,fr-FR;q=0.8,en-US;q=0.5,en;q=0.3\r\n"
+        "Accept-Encoding: gzip, deflate\r\n"
+        "Connection: close\r\n"
+        "Upgrade-Insecure-Requests: 1\r\n"
+        //"Script_Name:Test667\r\n"
+        "\r\n";
+
+    const char    *buffer = "GET /bonjour.phps/test.php?jour=14&mois=11&annee=2022 HTTP/1.1\r\n"
+        "Host: webserv.tech\r\n"
+        "User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:106.0) Gecko/20100101 Firefox/106.0\r\n"
+        "Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8\r\n"
+        "Accept-Language: fr,fr-FR;q=0.8,en-US;q=0.5,en;q=0.3\r\n"
+        "Accept-Encoding: gzip, deflate\r\n"
+        "Connection: close\r\n"
+        "Content-Length: 8\r\n"
+        
+        "\r\n"
+        "TEST\r\n"
+        //"Upgrade-Insecure-Requests: 1\r\n"
+        //"Script_Name:Test667\r\n"
+        "\r\n";
+
+
+"POST /post.php HTTP/1.1\r\n"
+        "Host: webserv.tech\r\n"
+        "User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:106.0) Gecko/20100101 Firefox/106.0\r\n"
+        "Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8\r\n"
+        "Accept-Language: fr,fr-FR;q=0.8,en-US;q=0.5,en;q=0.3\r\n"
+        "Accept-Encoding: gzip, deflate\r\n"
+        "Content-Type: application/x-www-form-urlencoded\r\n"
+        "Content-Length: 21\r\n"
+        "Origin: http://webserv.tech\r\n"
+        "Connection: close\r\n" 
+        "Referer: http://webserv.tech/post_form.html\r\n"
+        "Upgrade-Insecure-Requests: 1\r\n"
+        "\r\n"
+        "fname=John&lname=Doe";
+
+"POST /welcome.php HTTP/1.1\r\n"
+        "Host: webserv.tech\r\n"
+        "User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:106.0) Gecko/20100101 Firefox/106.0\r\n"
+        "Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8\r\n"
+        "Accept-Language: fr,fr-FR;q=0.8,en-US;q=0.5,en;q=0.3\r\n"
+        "Accept-Encoding: gzip, deflate\r\n"
+        "Content-Type: application/x-www-form-urlencoded\r\n"
+        "Content-Length: 23\r\n"
+        "Origin: http://webserv.tech\r\n"
+        "Connection: close\r\n"
+        "Referer: http://webserv.tech/welcome.php\r\n"
+        "Upgrade-Insecure-Requests: 1\r\n"
+        "\r\n"
+        "fname=TEST667John Wicky";
+
+
+"GET /bonjour.phps/test.php/et/un/pathinfo?laonvatester/query_string/mtn HTTP/1.1\r\n"
+        "Host: webserv.tech\r\n"
+        "User-Agent:TEST667\r\n"
+        "Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8\r\n"
+        "Accept-Language: fr,fr-FR;q=0.8,en-US;q=0.5,en;q=0.3\r\n"
+        "Accept-Encoding: gzip, deflate\r\n"
+        "Connection: close\r\n"
+        "Upgrade-Insecure-Requests: 1\r\n"
+        "\r\n";
+
+
+"POST /test2.php HTTP/1.1\r\n"
+        "Host: webserv.tech\r\n"
+        "User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:106.0) Gecko/20100101 Firefox/106.0\r\n"
+        "Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8\r\n"
+        "Accept-Language: fr,fr-FR;q=0.8,en-US;q=0.5,en;q=0.3\r\n"
+        "Accept-Encoding: gzip, deflate\r\n"
+        "Content-Type: multipart/form-data; boundary=---------------------------88793470728973353023133382881\r\n"
+        "Content-Length: 470\r\n"
+        "Origin: http://webserv.tech\r\n"
+        "Connection: close\r\n"
+        "Referer: http://webserv.tech/multipart.html\r\n"
+        "Upgrade-Insecure-Requests: 1\r\n"
+        "\r\n"
+        "-----------------------------88793470728973353023133382881\r\n"
+        "Content-Disposition: form-data; name=\"person\"\r\n"
+        "\r\n"
+        "UNTESTNAME\r\n"
+        "-----------------------------88793470728973353023133382881\r\n"
+        "Content-Disposition: form-data; name=\"secret\"; filename=\"get.php\"\r\n"
+        "Content-Type: application/x-php\r\n"
+        "\r\n"
+        "#!/usr/bin/php-cgi\n"
+        "\n"
+        "<?php\n"
+        "echo 'Bonjour ' . htmlspecialchars($_GET[\"lname\"]) . htmlspecialchars($_GET[\"fname\"]) . '!';\"\n"
+        "?>\n"
+        "\n"
+        "\r\n"
+        "-----------------------------88793470728973353023133382881--\r\n";
+
+
+"DELETE /upload.php HTTP/1.1\r\n"
+        "Host: webserv.tech\r\n"
+        "User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:106.0) Gecko/20100101 Firefox/106.0\r\n"
+        "Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8\r\n"
+        "Accept-Language: fr,fr-FR;q=0.8,en-US;q=0.5,en;q=0.3\r\n"
+        "Accept-Encoding: gzip, deflate\r\n"
+        "Content-Type: multipart/form-data; boundary=---------------------------428573287720322102133136845743\r\n"
+        "Content-Length: 378\r\n"
+        "Origin: http://webserv.tech\r\n"
+        "Connection: close\r\n"
+        "Referer: http://webserv.tech/upload.html\r\n"
+        "Upgrade-Insecure-Requests: 1\r\n"
+        "\r\n";
+        /*
+        "-----------------------------428573287720322102133136845743\r\n"
+        "Content-Disposition: form-data; name=\"fileToUpload\"; filename=\"unuploadtest.txt\"\r\n"
+        "Content-Type: text/plain\r\n"
+        "\r\n"
+        "This line written to upload file\r\n"
+        "\r\n"
+        "-----------------------------428573287720322102133136845743\r\n"
+        "Content-Disposition: form-data; name=\"submit\"\r\n"
+        "\r\n"
+        "Upload Image\r\n"
+        "-----------------------------428573287720322102133136845743--\r\n";
+        */
+
+"POST /webserv/upload.php HTTP/1.1\r\n"
+        "Host: 127.0.0.1:13856\r\n"
+        "User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:106.0) Gecko/20100101 Firefox/106.0\r\n"
+        "Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8\r\n"
+        "Accept-Language: fr,fr-FR;q=0.8,en-US;q=0.5,en;q=0.3\r\n"
+        "Accept-Encoding: gzip, deflate\r\n"
+        "Content-Type: application/x-www-form-urlencoded\r\n"
+        "Content-Length: 13\r\n"
+        "Origin: http://webserv.tech\r\n"
+        "Connection: close\r\n"
+        "Referer: http://webserv.tech/upload.php\r\n"
+        "Upgrade-Insecure-Requests: 1\r\n"
+        "\r\n"
+        "-----------------------------428573287720322102133136845743\r\n"
+        "Content-Disposition: form-data; name=\"fileToUpload\"; filename=\"upload.txt\"\r\n"
+        "Content-Type: text/plain\r\n"
+        "\r\n"
+        "This line written to file\r\n"
+        "\r\n"
+        "-----------------------------428573287720322102133136845743\r\n"
+        "Content-Disposition: form-data; name=\"submit\"\r\n"
+        "\r\n"
+        "Upload Image\r\n"
+        "-----------------------------428573287720322102133136845743--\r\n";
+
+
+"POST /post.php HTTP/1.1\r\n"
+        "Host: webserv.tech\r\n"
+        "User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:106.0) Gecko/20100101 Firefox/106.0\r\n"
+        "Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8\r\n"
+        "Accept-Language: fr,fr-FR;q=0.8,en-US;q=0.5,en;q=0.3\r\n"
+        "Accept-Encoding: gzip, deflate\r\n"
+        "Content-Type: application/x-www-form-urlencoded\r\n"
+        "Content-Length: 20\r\n"
+        "Origin: http://webserv.tech\r\n"
+        "Connection: close\r\n" 
+        "Referer: http://webserv.tech/post_form.html\r\n"
+        "Upgrade-Insecure-Requests: 1\r\n"
+        "\r\n"
+        "fname=John&lname=Doe";
